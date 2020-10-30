@@ -1,4 +1,4 @@
-package pl.dernovyi.homework6mailsender.controller;
+package pl.dernovyi.homework6mailsendler.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,9 +6,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import pl.dernovyi.homework6mailsender.annotation.MyAspect;
-import pl.dernovyi.homework6mailsender.model.Film;
-import pl.dernovyi.homework6mailsender.service.FilmService;
+import pl.dernovyi.homework6mailsendler.annotation.MyAspect;
+import pl.dernovyi.homework6mailsendler.model.Film;
+import pl.dernovyi.homework6mailsendler.service.FilmService;
 
 import javax.validation.ValidationException;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pl.dernovyi.homework6mailsender.model;
+package pl.dernovyi.homework6mailsendler.model;
 
 
 

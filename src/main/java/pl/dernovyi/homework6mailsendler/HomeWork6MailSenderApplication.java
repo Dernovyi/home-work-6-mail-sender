@@ -1,4 +1,4 @@
-package pl.dernovyi.homework6mailsender;
+package pl.dernovyi.homework6mailsendler;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

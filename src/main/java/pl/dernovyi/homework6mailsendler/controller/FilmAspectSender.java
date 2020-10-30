@@ -1,4 +1,4 @@
-package pl.dernovyi.homework6mailsender.controller;
+package pl.dernovyi.homework6mailsendler.controller;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
-import pl.dernovyi.homework6mailsender.EmailCfg;
-import pl.dernovyi.homework6mailsender.service.FilmService;
+import pl.dernovyi.homework6mailsendler.EmailCfg;
+import pl.dernovyi.homework6mailsendler.service.FilmService;
 
 
 
@@ -24,7 +24,7 @@ public class FilmAspectSender {
         this.filmService = filmService;
     }
 
-    @After("@annotation(pl.dernovyi.homework6mailsender.annotation.MyAspect)")
+    @After("@annotation(pl.dernovyi.homework6mailsendler.annotation.MyAspect)")
     private void afterPostFilmsSand(){
         JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
         javaMailSender.setHost(this.emailCfg.getHost());

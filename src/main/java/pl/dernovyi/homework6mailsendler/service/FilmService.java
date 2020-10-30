@@ -1,9 +1,8 @@
-package pl.dernovyi.homework6mailsender.service;
+package pl.dernovyi.homework6mailsendler.service;
 
-import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import pl.dernovyi.homework6mailsender.model.Film;
+import pl.dernovyi.homework6mailsendler.model.Film;
 
 import java.util.ArrayList;
 import java.util.List;

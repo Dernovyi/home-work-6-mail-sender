@@ -1,4 +1,4 @@
-package pl.dernovyi.homework6mailsender;
+package pl.dernovyi.homework6mailsendler;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
