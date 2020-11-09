@@ -7,7 +7,6 @@ import pl.dernovyi.homework6mailsendler.model.Film;
 import java.util.ArrayList;
 import java.util.List;
 @Service
-@Component
 public class FilmService {
     List<Film> films;
 

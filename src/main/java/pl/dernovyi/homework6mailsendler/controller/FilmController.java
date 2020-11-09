@@ -17,7 +17,7 @@ import java.util.List;
 @RequestMapping("/films")
 public class FilmController {
 
-    FilmService filmService;
+    private final FilmService filmService;
     @Autowired
     public FilmController(FilmService filmService) {
         this.filmService = filmService;
@@ -28,7 +28,7 @@ public class FilmController {
         if(films.size()>0){
             return new ResponseEntity<>(films, HttpStatus.OK);
         }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
     @PostMapping
     @MyAspect

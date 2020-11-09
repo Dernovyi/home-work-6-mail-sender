@@ -16,8 +16,8 @@ import pl.dernovyi.homework6mailsendler.service.FilmService;
 @Component
 public class FilmAspectSender {
 
-    EmailCfg emailCfg;
-    FilmService filmService;
+   private final EmailCfg emailCfg;
+   private final FilmService filmService;
     @Autowired
     public FilmAspectSender(EmailCfg emailCfg, FilmService filmService) {
         this.emailCfg = emailCfg;
